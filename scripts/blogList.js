@@ -52,7 +52,7 @@ class BlogManager {
         newItem.classList.add('blog__item')
         newItem.innerHTML = `
             <a class="blog__item-link" href="#">
-                <img src=${imageSrc} alt="" class="blog__item-img">
+                <img src=".${imageSrc}" alt="" class="blog__item-img">
                 <h4 class="blog__item-tag">${tag}</h4>
                 <h3 class="blog__item-title">${title}</h3>
                 <p class="blog__item-date">${date}</p>
