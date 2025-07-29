@@ -1,17 +1,17 @@
 const data = [
-    {   iconSrc: `./static/images/footer/facebook.png`,
+    {   iconSrc: `static/images/footer/facebook.png`,
         alt: 'facebook',
     },
-    {   iconSrc: `./static/images/footer/instagram.png`,
+    {   iconSrc: `static/images/footer/instagram.png`,
         alt: 'instagram',
     },
-    {   iconSrc: `./static/images/footer/twitter.png`,
+    {   iconSrc: `static/images/footer/twitter.png`,
         alt: 'twitter',
     },
-    {   iconSrc: `./static/images/footer/in.png`,
+    {   iconSrc: `static/images/footer/in.png`,
         alt: 'in',
     },
-    {   iconSrc: `./static/images/footer/ball.png`,
+    {   iconSrc: `static/images/footer/ball.png`,
         alt: 'ball',
     },
 ]
@@ -44,8 +44,8 @@ class FooterIconsManager {
         const newItem = document.createElement('li')
         newItem.classList.add('footer__social-item')
         newItem.innerHTML = `
-            <a href="" class="footer__social-link">
-                <img src=${iconSrc} alt=${alt}>
+            <a href="#" class="footer__social-link">
+                <img src="./${iconSrc}" alt=${alt}>
             </a>
         `
 
