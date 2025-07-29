@@ -1,31 +1,31 @@
 const listData = [
     {
-        imageSrc: '/static/images/works/01.png',
+        imageSrc: 'static/images/works/01.png',
         title: 'Conference',
         description: 'Art Direction, Design',
     },
     {
-        imageSrc: '/static/images/works/02.png',
+        imageSrc: 'static/images/works/02.png',
         title: 'Magazine',
         description: 'Logo, User Interface',
     },
     {
-        imageSrc: '/static/images/works/03.png',
+        imageSrc: 'static/images/works/03.png',
         title: 'Ivor Application',
         description: 'User Interface',
     },
     {
-        imageSrc: '/static/images/works/04.png',
+        imageSrc: 'static/images/works/04.png',
         title: 'Black Apple Watch',
         description: 'Logo, User Interface',
     },
     {
-        imageSrc: '/static/images/works/05.png',
+        imageSrc: 'static/images/works/05.png',
         title: 'Flying to the moon',
         description: 'User Experiences',
     },
     {
-        imageSrc: '/static/images/works/06.png',
+        imageSrc: 'static/images/works/06.png',
         title: 'Dharma Webfont',
         description: 'Branding, Web Design',
     },
@@ -65,7 +65,7 @@ class ListManager {
 
     setItemTemplate(src, title, description) {
         const itemTemplate = `
-            <img src=${src} class="works__item-img" width="470" height="500">
+            <img src="./${src}" class="works__item-img" width="470" height="500">
             <h3 class="works__item-title">${title}</h3>
             <p class="works__item-description">${description}</p>
         `
