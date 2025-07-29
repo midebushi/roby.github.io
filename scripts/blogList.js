@@ -1,18 +1,18 @@
 const data = [
     {
-        imageSrc: '/static/images/blog/1.png',
+        imageSrc: 'static/images/blog/1.png',
         tag: 'Marketing',
         title: 'Curating a workplace that inspires all of us',
         date: 'February 3, 2021',
     },
     {
-        imageSrc: '/static/images/blog/2.png',
+        imageSrc: 'static/images/blog/2.png',
         tag: 'Design',
         title: 'Designers who changed the web with Webflow',
         date: 'February 25, 2021',
     },
     {
-        imageSrc: '/static/images/blog/3.png',
+        imageSrc: 'static/images/blog/3.png',
         tag: 'Code',
         title: 'Communication between studio departments',
         date: 'March 9, 2021',
@@ -52,7 +52,7 @@ class BlogManager {
         newItem.classList.add('blog__item')
         newItem.innerHTML = `
             <a class="blog__item-link" href="#">
-                <img src=".${imageSrc}" alt="" class="blog__item-img">
+                <img src="./${imageSrc}" alt="" class="blog__item-img">
                 <h4 class="blog__item-tag">${tag}</h4>
                 <h3 class="blog__item-title">${title}</h3>
                 <p class="blog__item-date">${date}</p>
