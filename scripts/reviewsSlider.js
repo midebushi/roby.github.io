@@ -1,31 +1,31 @@
 const data = [
     {
         description: '"The public is more familiar with bad design than good design. It is, in effect, conditioned to prefer bad design, because that is what it lives with."',
-        iconSrc: '/static/images/reviews/caitlin.png',
+        iconSrc: 'static/images/reviews/caitlin.png',
         name: 'Caitlin Ward',
         job: 'Webflow Founder',
     },
     {
         description: '"A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away."',
-        iconSrc: '/static/images/reviews/matthew.png',
+        iconSrc: 'static/images/reviews/matthew.png',
         name: 'Matthew Webster',
         job: 'Webflow Founder',
     },
     {
         description: '"The public is more familiar with bad design than good design. It is, in effect, conditioned to prefer bad design, because that is what it lives with."',
-        iconSrc: '/static/images/reviews/paige.png',
+        iconSrc: 'static/images/reviews/paige.png',
         name: 'Paige Brennan',
         job: 'Webflow Founder',
     },
     {
         description: '"A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away."',
-        iconSrc: '/static/images/reviews/caitlin.png',
+        iconSrc: 'static/images/reviews/caitlin.png',
         name: 'Vladislav Bezmaternykh',
         job: 'Webflow Founder',
     },
     {
         description: '"The public is more familiar with bad design than good design. It is, in effect, conditioned to prefer bad design, because that is what it lives with."',
-        iconSrc: '/static/images/reviews/caitlin.png',
+        iconSrc: 'static/images/reviews/caitlin.png',
         name: 'Stas',
         job: 'Webflow Founder',
     },
@@ -139,7 +139,7 @@ class ReviewsManager {
     setReviewTemplate(description, iconSrc, name, job) {
         const itemTemplate = `
             <p class="reviews__item-description">${description}</p>
-            <img src=${iconSrc} class="reviews__item-icon">
+            <img src="./${iconSrc}" class="reviews__item-icon">
             <h4 class="reviews__item-name">${name}</h4>
             <p class="reviews__item-job">${job}</p>
         `
