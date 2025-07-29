@@ -1,0 +1,132 @@
+/* Footer */
+
+.footer {
+    padding: 0 120px;
+
+    transition: all ease-in-out 0.3s;
+}
+
+.footer__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer__social {
+    display: flex;
+}
+
+/* Footer Content */
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__content-title {
+    font-size: 20px;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+.footer__content-description {
+    color: #747474;
+    font-size: 18px;
+}
+
+.footer__content-link {
+    display: block;
+    width: 180px;
+
+    text-align: center;
+    font-weight: 700;
+
+    background-color: #000;
+    color: #fff;
+
+    border: 1px solid #000;
+    border-radius: 40px;
+
+    padding: 16px 10px;
+    margin-top: 50px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: all ease-in-out 0.2s;
+}
+
+.footer__content-link:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.footer__content-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer__content-item a {
+    text-decoration: none;
+    color: inherit;
+
+    font-size: 18px;
+}
+
+.footer__content-item a:hover {
+    text-decoration: underline;
+}
+
+.footer__content-description--link {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer__content-description--link:hover {
+    text-decoration: underline;
+}
+
+.footer__info {
+    padding: 20px 0;
+}
+
+.footer__info-description {
+    font-size: 17px;
+    color: #747474;
+}
+
+/* Media */ 
+
+@media (max-width: 835px) {
+    .footer {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 660px) {
+    .footer {
+        padding: 0 30px;
+    }
+
+    .footer__header {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer__content {
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer__info-description {
+        text-align: center;
+    }
+
+}

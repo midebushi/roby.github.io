@@ -1,0 +1,152 @@
+/* Reviews */
+
+.reviews {
+    overflow: hidden;
+}
+
+.reviews__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.reviews-title {
+    text-align: center;
+
+    font-size: 54px;
+    font-weight: 400;
+
+    transition: all ease-in-out 0.3s;
+    margin-bottom: 80px;
+
+    text-transform: uppercase;
+}
+
+.reviews-title strong {
+    font-size: 60px;
+    transition: all ease-in-out 0.3s;
+}
+
+.reviews__content {
+    position: relative;
+    /* width: 2420px; */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    overflow: hidden;
+    transition: all ease-in-out 0.3s;
+
+    
+}
+
+.reviews__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px;
+
+    border: 1px solid #747474;
+    border-radius: 5px;
+
+    max-width: 460px;
+    width: 460px;
+
+    color: #747474;
+    opacity: 0.5;
+
+    transition: all ease-in-out 0.5s;
+}
+
+.reviews__item.reviews__item--is-active {
+    opacity: 1;
+    color: #000;
+    border-color: #000;
+}
+
+.reviews__item-description {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.reviews__item-icon {
+    margin-bottom: 20px;
+}
+
+.reviews__item-name {
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    margin-bottom: 5px;
+}
+
+.reviews__item-job {
+    font-size: 17px;
+    color: #747474;
+}
+
+/* Controls */
+
+.reviews__control {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.reviews__control-button {
+    border-radius: 0;
+    border: none;
+
+    width: 10px;
+    height: 10px;
+
+    background-color: #cecece;
+}
+
+.reviews__control-button:hover {
+    background-color: #747474;
+}
+
+.reviews__control-button.reviews__control-button--active {
+    background-color: #000;
+}
+
+/* Media */
+
+@media (max-width: 1320px) {
+    .reviews-title {
+        font-size: 40px;
+    }
+
+    .reviews-title strong {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .reviews-title {
+        font-size: 30px;
+    }
+
+    .reviews-title strong {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 835px) {
+    .reviews-title {
+        font-size: 25px;
+    }
+
+    .reviews-title strong {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 660px) {
+    .reviews__item-description {
+        width: 300px;
+    }
+
+}

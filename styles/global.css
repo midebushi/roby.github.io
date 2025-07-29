@@ -1,0 +1,76 @@
+/* Body */
+
+.body--locked {
+    overflow: hidden;
+}
+
+/* Button */
+
+button {
+    border: 1px solid;
+    border-radius: 100%;
+    width: 140px;
+    height: 140px;
+
+    transition: all ease-in-out 0.2s;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button p {
+    line-height: 1.5;
+}
+
+/* Ul */
+
+ul {
+    padding: 0;
+}
+
+
+
+/* Modal Background */
+
+.modal__background {
+    opacity: 0;
+
+    position: absolute;
+    top: 75px;
+    left: 0;
+
+    z-index: 10;
+
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, 0.400);
+
+    transition: opacity ease-in-out 0.5s;
+}
+
+.modal__background.modal__background--active {
+    opacity: 1;
+}
+
+
+
+@media (min-width: 420px) {
+    .modal__background {
+        display: none;
+    }
+}
+
+@media (max-width: 1320px) {
+    button {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 835px) {
+    button {
+        width: 80px;
+        height: 80px;
+    }
+}

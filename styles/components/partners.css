@@ -1,0 +1,35 @@
+/* Partners */
+
+.partners {
+
+}
+
+.partners-title {
+    font-size: 27px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.partners-title strong {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.partners__list {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+
+    transition: all ease-in-out 0.3s;
+}
+
+@media (max-width: 950px) {
+    .partners__list {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}

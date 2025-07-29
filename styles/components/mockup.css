@@ -1,0 +1,153 @@
+/* Mockup */
+
+.mockup {
+    display: flex;
+    
+    margin: 0 0 0 190px;
+    padding: 110px 0;
+    overflow: hidden;
+
+    gap: 20px;
+
+    transition: all ease-in-out 0.3s;
+}
+
+.mockup__item:nth-child(1) {
+    width: 60%;
+    padding: 110px 0;
+    transition: all ease-in-out 0.3s;
+}
+
+.mockup__item:nth-child(2) {
+    position: relative;
+    left: 20px;
+    width: 850px;
+    max-width: 100%;
+
+    transition: all ease-in-out 0.3s;
+}
+
+.mockup-img {
+    width: 850px;
+    max-width: 200%;
+}
+
+.mockup__title {
+    font-size: 48px;
+    font-weight: 400;
+
+    transition: all ease-in-out 0.3s;
+
+    text-transform: uppercase;
+
+    max-width: 430px;
+    width: 100%;
+}
+
+.mockup__title strong {
+    transition: all ease-in-out 0.3s;
+}
+
+.mockup__block {
+    margin: 40px 0;
+}
+
+.mockup__block-title {
+    font-size: 18px;
+    font-weight: 400;
+
+    margin-bottom: 10px;
+
+    transition: all ease-in-out 0.3s;
+
+    text-transform: uppercase;
+}
+
+.mockup__block-title strong {
+    font-size: 22px;
+    font-weight: 700;
+
+    margin-right: 10px;
+
+    transition: all ease-in-out 0.3s;
+}
+
+.mockup__block-description {
+    font-size: 19px;
+    color: #747474;
+
+    max-width: 410px;
+    width: 100%;
+}
+
+/* Media */
+
+@media (max-width: 1320px) {
+    .mockup__title {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .mockup {
+        margin-left: 50px;
+    }
+
+    .mockup__item:nth-child(1) {
+        width: 60%;
+        padding: 110px 0;
+    }
+
+    .mockup__item:nth-child(2) {
+        width: 500px;
+    }
+
+    .mockup__title {
+        font-size: 33px;
+    }
+
+
+}
+
+@media (max-width: 835px) {
+    .mockup__item:nth-child(2) {
+        width: 400px;
+    }
+
+    .mockup__item:nth-child(1) {
+        width: 80%;
+        padding: 10px 0;
+        
+    }
+
+}
+
+@media (max-width: 660px) {
+    .mockup {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .mockup__item:nth-child(1) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .mockup__item:nth-child(2) {
+        width: 100%;
+        max-width: 450px;
+        left: 0;
+        
+    }
+
+    .mockup-img {
+        max-width: 100%;
+    }
+}
