@@ -139,7 +139,7 @@ class ReviewsManager {
     setReviewTemplate(description, iconSrc, name, job) {
         const itemTemplate = `
             <p class="reviews__item-description">${description}</p>
-            <img src="./${iconSrc}" class="reviews__item-icon">
+            <img src="../${iconSrc}" class="reviews__item-icon">
             <h4 class="reviews__item-name">${name}</h4>
             <p class="reviews__item-job">${job}</p>
         `
